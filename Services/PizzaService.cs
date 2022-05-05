@@ -10,8 +10,8 @@ namespace PizzAPI.Services
         {
             Pizzas = new List<Pizza>
             {
-                new Pizza {Id = 1, Name = "Pepperoni Banana Pepper", IsGlutenFree = true},
-                new Pizza {Id = 2, Name = "Meatlovers", IsGlutenFree = true},
+                new Pizza {Id = 1, Name = "Pepperoni Banana Pepper", Ingredients = new List<string> (){"Cheese", "Pepperoni", "Banana Peppers"}, IsGlutenFree = true},
+                new Pizza {Id = 2, Name = "Meatlovers", Ingredients = new List<string>(){"Cheese", "Italian Sausage", "Pepperoni", "Ham", "Chicken"}, IsGlutenFree = true},
             };
         }
         public static List<Pizza> GetAll() => Pizzas;
